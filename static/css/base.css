@@ -42,16 +42,20 @@ header h1 {
 .side-menubar {
     width: 15%;
     display: flex;
+    font-size: 15px;
     flex-direction: column;
     padding: 45px 0px 20px;
-    background-color:#15578f;
+    background-color: #15578f;
     color: white;
     position: fixed;
     height: 100%;
 }
+.sidebar-icon {
+    margin-right: 20px;
+}
 .rendered-page {
     width: 85%;
-    padding: 50px 50px 50px 60px;
+    padding: 50px 50px 50px 50px;
     margin-left: 15%;
     height: 100%;
 }
@@ -73,11 +77,11 @@ header h1 {
     align-items: center;
     width: 100%;
     min-height: 50px;
-    padding-left: 20px;
+    padding-left: 10%;
     border-bottom: 1px solid #104572;
 }
 .sub-menu-items {
-    padding: 0 35px 0 35px;
+    padding: 0 10px 0 10%;
 }
 .arrow {
     margin-right: 10px;
@@ -99,12 +103,6 @@ header h1 {
     display: flex;
     justify-content: space-between;
 }
-.dropdown-image {
-    height: 17px;
-    width: 17px;
-    margin-right: 20px;
-}
-
 /*dashboard css*/
 .graph {
     min-width: 310px; 
@@ -124,7 +122,10 @@ header h1 {
     margin: 10px 20px 0px 25px;
 }
 table {
-    border: 1px solid lightgrey;
+    border: 1px solid #e7e0e0;
+}
+.table-sm td, .table-sm th {
+    border: none;
 }
 table thead tr {
     background-color: #a7a7a7;
@@ -138,7 +139,7 @@ table tbody tr:nth-child(odd) {
 }
 .modal-dialog {
     max-width: 900px;
-    top: 200px;
+    top: 15%;
 }
 #modal-data textarea + .parsed {
     width: 100% !important; 
@@ -201,3 +202,12 @@ textarea {
 .dataTables_length {
     display: inline-block;
 }
+@media screen and (max-width: 1400px) {
+    .side-menubar {
+        width: 20%;
+    }
+    .rendered-page {
+        width: 80%;
+        margin-left: 20%;
+    }
+  }
